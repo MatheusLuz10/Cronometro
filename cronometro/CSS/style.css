@@ -2,7 +2,7 @@
 
 :root {
     --primary-color--: rgb(44, 106, 120);
-    --primary-color-darker--: rgb(21, 72, 85);
+    --primary-color-darker--: rgb(59, 114, 127);
 }
 
 * {
@@ -21,60 +21,24 @@ body {
 }
 
 .container {
+    display: grid;
     max-width: 640px;
     margin: 0 auto;
     background: #ccc;
     padding: 20px;
     border-radius: 10px;
+    justify-content: center;
     
 }
 
-form input, form label, form button {
-display: block;
-width: 100%;
-margin-bottom: 10px;
-border-radius: 5px;
-    
+button {
+   padding: 15px;
+ 
+   
 }
 
-form input {
-    font-size: 22px;
-    height: 40px;
-    padding: 0 20px;
-}
-
-form input:focus {
-    outline: 1px solid var(--primary-color--);
-
-}
-
-form button {
-  
-    height: 40px;
-    border: none;
-    background: var(--primary-color--);
-    color: #fff;
-    font-size: 18px;
-    font-weight: 400;
-    cursor: pointer;
-    margin-top: 25px;
-}
-
-form button:hover {
+button:hover {
     background: var(--primary-color-darker--);
-}
-
-form button:active {
-    background: var(--primary-color--);
-}
-
-.paragrafo-resultado, .bad {
-    background-color: green;
-    padding: 10px;
-}
-
-.bad {
-    background: rgb(208, 99, 99);
 }
 
 .relogio {
